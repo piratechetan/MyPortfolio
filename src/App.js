@@ -16,7 +16,7 @@ const App = () => {
           <NavBar />
           <Particle/>
           <Switch>
-            <Route path={["/MyPortfolio","/",]}  exact component={Header} />
+            <Route path={"/"}  exact component={Header} />
             <Route path="/about" component={About} />
             <Route path="/project" component={Portfolio} />
             <Route path="/contact" component={Contact} />
