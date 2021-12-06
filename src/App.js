@@ -11,12 +11,11 @@ import Particle from "./components/particles/particle";
 const App = () => {
   return (
     <>
-      <Router basename={"/"}>
+      <Router >
         <div className="App">
           <NavBar />
-          <Particle/>
           <Switch>
-            <Route path={"/"}  exact component={Header} />
+            <Route path={["/","/MyPortfolio" ]} exact component={Header} />
             <Route path="/about" component={About} />
             <Route path="/project" component={Portfolio} />
             <Route path="/contact" component={Contact} />
