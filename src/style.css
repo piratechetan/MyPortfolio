@@ -1,0 +1,347 @@
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+
+  --imp-text-color: #c770f0;
+}
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: #FFD700;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-black: #2b2b2b;
+}
+
+.purple {
+  color: var(--primary-orange) !important;
+}
+
+/* --------- */
+/*  Preloader */
+/* --------- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #0c0513;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#preloader-none {
+  opacity: 0;
+}
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-orange);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-orange);
+  border-radius: 12px;
+}
+
+/* --------- */
+/* Navbar Section  */
+/* --------- */
+
+/* --------- */
+/* Home section */
+/* --------- */
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#tsparticles {
+  position: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+}
+
+
+.home-section {
+  z-index: -1;
+  position: relative;
+  background-repeat: no-repeat;
+  justify-content: center;
+  height: 100%;
+  padding-top: 20px;
+  width: 100%;
+  background-image:url(./assets/about-bg.jpg);
+  top: 0;
+  background-size: cover;
+}
+
+.home-header{
+  padding-top: 5rem;
+}
+
+
+
+.home-content {
+  justify-self: center;
+  padding: 9rem 0 0.9rem !important;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.heading {
+  font-size: 2.4em !important;
+  padding-left: 50px !important;
+}
+
+.heading-name {
+  font-size: 2.5em !important;
+  padding-left: 45px !important;
+}
+
+.main-name {
+  color: var(--primary-orange);
+}
+
+
+.main-info {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20rem;
+  
+  text-align: center;
+  font-family: "robot Condensed" sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
+
+
+
+/****************************Typed-Text****************/
+.typed-text {
+  font-size: 2rem;
+  color: #C0C0C0;
+  font-weight: 700;
+}
+
+
+
+.Typewriter__wrapper {
+  font-size: 2.2em !important;
+  color: #be6adf !important;
+  font-weight: 600 !important;
+}
+.Typewriter__cursor {
+  font-size: 2.4em !important;
+  color: #b562d6 !important;
+}
+
+@media (max-width: 767px) {
+  .Typewriter__wrapper {
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+    position: absolute !important;
+  }
+  .Typewriter__cursor {
+    display: none !important;
+  }
+}
+
+/* --------- */
+/* About */
+/* --------- */
+.about-section {
+  background-image:url(./assets/about-bg.jpg);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+}
+
+/* --------- */
+/* Projects */
+/* --------- */
+.project-section {
+  /* background-image:url(./assets/about-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  height: 100%; */
+  background-image:url(./assets/about-bg.jpg);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  
+}
+
+.project-card-view {
+  box-shadow: 0px 0px 5px 0px var(--primary-orange) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+}
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px #C0C0C0 !important;
+}
+
+
+
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #623686 !important;
+  border-color: #623686 !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: var(--primary-orange) !important;
+  border-color: var(--imp-text-color) !important;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.project-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 2em !important;
+}
+/* 
+.social-container {
+  background: transparent;
+  padding: 25px 20px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.Google {
+  color: #EA4335;
+}
+
+a.facebook {
+  color: #fff;
+}
+
+a.github {
+  color: #171515;
+}
+
+a.linkedin{
+  color: #313335;
+}
+
+a.instagram {
+  color: #8a3ab9;
+} */
+
+.contact-section{
+  background-image:url(./assets/about-bg.jpg);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+}
