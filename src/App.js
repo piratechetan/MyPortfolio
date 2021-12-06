@@ -15,7 +15,7 @@ const App = () => {
         <div className="App">
           <NavBar />
           <Switch>
-            <Route path={["/","/MyPortfolio" ]} exact component={Header} />
+            <Route path={["/",'MyPortfolio']}  exact component={Header} />
             <Route path="/about" component={About} />
             <Route path="/project" component={Portfolio} />
             <Route path="/contact" component={Contact} />
