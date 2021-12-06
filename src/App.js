@@ -7,14 +7,16 @@ import Header from "./components/Screens/Header";
 import About from "./components/Screens/about/About";
 import Portfolio from "./components/Screens/Projects/Portfolio";
 import Contact from "./components/Screens/Contact";
+import Particle from "./components/particles/particle";
 const App = () => {
   return (
     <>
-      <Router>
+      <Router basename={"/"}>
         <div className="App">
           <NavBar />
+          <Particle/>
           <Switch>
-            <Route path="/" exact component={Header} />
+            <Route path={["/MyPortfolio","/",]}  exact component={Header} />
             <Route path="/about" component={About} />
             <Route path="/project" component={Portfolio} />
             <Route path="/contact" component={Contact} />

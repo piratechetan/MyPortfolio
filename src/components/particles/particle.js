@@ -1,5 +1,5 @@
 import React from "react";
-import Particles from "react-tsparticles";
+import Particles from "react-particles-js";
 
 const Particle = () => {
   return (
@@ -19,7 +19,7 @@ const Particle = () => {
           },
           move: {
             direction: "right",
-            speed: 0.5,
+            speed:0.5
           },
           size: {
             value: 1,
