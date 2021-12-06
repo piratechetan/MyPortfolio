@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Screens/Header";
 import About from "./components/Screens/about/About";
 import Portfolio from "./components/Screens/Projects/Portfolio";
-import Footer from "./components/Screens/Footer";
 import Contact from "./components/Screens/Contact";
 const App = () => {
   return (
